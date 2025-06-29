@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!--bootstrap links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!--icons link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+
+
+    <link rel="stylesheet" href="gyam_style.css">
+    <script defer src=""></script>
+    <title>7S|Technologies</title>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <div class="logo"> <img src="images/logo_gyam.png" alt=""></div>
+                    <a class="navbar-text" href="#home" >GYAM Technologies </a>
+                </div>
+                <div>
+    
+                    <!-- Cart Icon -->
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="#" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        </a>
+                    </li>
+
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact"><i class="fa fa-phone"></i> Contact us</a>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-users"></i> Clients
+                        </a>
+                        <ul class="dropdown-menu"  style="color: white; background-color: rgb(55, 54, 54);">
+                            <li><a class="dropdown-item" href="#a">a</a></li>
+                            <li><a class="dropdown-item" href="#b">b</a></li>
+                            <li><a class="dropdown-item" href="#c">c</a></li>
+                            <li><a class="dropdown-item" href="#d">d</a></li>
+                            <li><a class="dropdown-item" href="#e">e</a></li>
+                            <li><a class="dropdown-item" href="#f">f</a></li>
+                            <li><a class="dropdown-item" href="#g">g</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-users"></i> Projects
+                        </a>
+                        <ul class="dropdown-menu"  style="color: white; background-color: rgb(55, 54, 54);">
+                            <li><a class="dropdown-item" href="#embeddedsystemsprojects">Embedded Systems Projects</a></li>
+                            <li><a class="dropdown-item" href="#homeautomationprojects">Home Automation  Projects</a></li>
+                            <li><a class="dropdown-item" href="#homeautomationprojects">Animatronics Projects</a></li>
+                            <li><a class="dropdown-item" href="#industrialautomationprojects">Industrial Automation Projects</a></li>
+                            <li><a class="dropdown-item" href="#infotainmentsystemsprojects">Infotainment Systems Projects</a></li>
+                            <li><a class="dropdown-item" href="#rapidprototypingprojects">Rapid Prototyping Projects</a></li>
+                            <li><a class="dropdown-item" href="#trainingstimulatorprojects">Trining Stimulator Projects</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-clone"></i> Services
+                        </a>
+                        <ul class="dropdown-menu"  style="color: white; background-color: rgb(55, 54, 54);">
+                            <li><a class="dropdown-item" class="active" href="#embeddedsystems">Embedded Systems</a></li>
+                            <li><a class="dropdown-item" href="#homeautomation">Home Automation</a></li>
+                            <li><a class="dropdown-item" href="#animatronics">Animatronics</a></li>
+                            <li><a class="dropdown-item" href="#industrialautomation">Industrial Automation</a></li>
+                            <li><a class="dropdown-item" href="#infotainmentsystems">Infotainment Systems</a></li>
+                            <li><a class="dropdown-item" href="#rapidprototyping">Rapid Prototyping</a></li>
+                            <li><a class="dropdown-item" href="#trainingstimulator">Trining Stimulator</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about" ><i class="fa fa-user"></i> About</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home" ><i class="fa fa-home"></i> Home</a>
+                    </li>
+    
+                </div>
+    
+                <label id="toggle" >
+                    <i class="fas fa-bars toggle"></i>
+                </label>
+            </div>
+        </nav>
+
+        
+        <div class="container text-center" id="home" style="width: 100%;">
+            <div class="row">
+                <div class="col-md-7 col-sm-12">
+                    <h6>EVOLVE   AS   ONE</h6>
+                        <h1>GYAM Technologies</h1>
+                        <p>
+                            GYAM Technologies offers an innovative project and product based solutions with an objective to consistently deliver innovative, high quality and cost effective services to its clients. 
+                            We offer Hardware and Software solutions in the various domains.
+                        </p>
+                        <a href="#shop" class="btn btn-primary" background-color="#FFFFFF">Explore Products</a>
+                </div>
+
+                <div class="col-md-5">
+                    <img class="robot1" src="./images/robot2.png" alt="background0">
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="section-1" id="embeddedsystems">
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="embedded">
+                            <img src="../public/images/Embedded4.jpg" alt="embedded">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel text-left">
+                            <h1 class="text-center">Embedded Systems</h1>
+                            <p class="pt-4">It is a system that embeds both software & hardware for specific function that is built into a machine.
+                                Embedded systems are used in all kinds of devices, from cars to microwaves. The term embedded means 
+                                "built-in" and the word system means "a group of interacting, interrelated, or interdependent components 
+                                forming an integrated whole."
+                                <br>
+                                <br>
+                                They can make our lives easier by providing great features and functionality that we need. 
+                                The future of embedded systems is looking bright with the introduction of new technology like AI 
+                                and IoT which will continue to enhance what they can do for us.
+                                <br>
+                                The future of embedded systems looks very bright. They are becoming more popular in the home 
+                                appliance industry as well as in commercial and industrial applications.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-2" id="homeautomation">
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="homeautomation">
+                            <img src="../public/images/homeautomation_image4.jpg" alt="homeautomation">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel text-left">
+                            <h1 class="text-center">>Home Automation</h1>
+                            <p>Automation for life style, it is a term that encompasses a broad range of technologies and systems that are 
+                                used to create convenience and comfort at home. It is a system where you can control all the devices in your 
+                                home with just one remote, app or device. It has been around for quite some time but it was only until recently
+                                that it became more affordable for the average consumer to purchase. The most popular devices in home 
+                                automation include smart thermostats, light bulbs, plugs, security cameras and smart locks.
+                                <br>
+                                <br>
+                                Home automation is the use of electronic devices to control and automate a home. Home automation can be 
+                                used to control many aspects of your home, such as lights, temperature, and security, can be accomplished 
+                                by using a hub or a controller. These devices connect all the different appliances in your house to each 
+                                other and usually come with an app that you use to control them.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="section-3" id="animatronics">
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="animatronics">
+                            <img src="../public/images/animatronics_image1.jpg" alt="animatronics">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel text-left">
+                            <h1 class="text-center">Animatronics</h1>
+                            <p>Animatronics is combination of animation +electronics, used to create a creature (or) Animals 
+                                (or) life like robots which doesn’t exist to Perform some action movements like walking, crawling, 
+                                eye moments etc. Mostly the film industry & theme parks are revolutionizing this animatronics technology 
+                                to develop robotic animations implementing with AI (Artificial Intelligence). Audi-animatronics 
+                                (also called as AA’s).
+                                <br>
+                                <br>
+                                The future of animatronics is bright comeback with Artificial intelligence as this technology 
+                                is expanding not only in movies & theme parks but also in military too.
+                            </p>
+                            <p>Animatronic actions incorporate creatures (counting dinosaurs), plants, and even legendary animals. 
+                                A robot designed to be a convincing imitation of a human is more specifically labeled as an android.
+                                <br>
+                                It is a multi-disciplinary field that incorporates life systems, robots, mechatronics, and puppetry bringing about 
+                                the exact activity. They are covered with body shells and versatile skins made of hard and sensitive plastic materials and 
+                                finished with subtleties like tones, hair and plumes, and various parts to make the figure progressively sensible and real 
+                                looking.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-4" id="industrialautomation">
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="industriacautomation">
+                            <img src="../public/images/Industrialautomation_image1.jpg" alt="industriacautomation">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel text-left">
+                            <h1 class="text-center">Industriac Automation</h1>
+                            <p>Industriac automation is software that allows you to automate your business processes. It helps you 
+                                to be more productive and efficient while saving time on manual tasks. It helps you to be more productive 
+                                and efficient while saving time on manual tasks.
+                                <br>
+                                <br>
+                                Industriac automation saves time by automating repetitive tasks, freeing up your employees for other 
+                                important work .This software can be used for many different industries, from manufacturing to hospitality 
+                                ,It can help you increase productivity and efficiency in your workplace.
+                                <br>
+                                Industriac automation is the process of using machines to do work that would traditionally be done by humans. 
+                                It is a process that has been around since the industrial revolution. But it only recently became a viable and
+                                attractive alternative to human labor. This is because of the exponential growth in computing power, storage,
+                                and related technologies.
+                                <br>
+                                Industriac automation can be used for any type of work that can be broken down into a series of repetitive tasks.
+                                It does not matter if the task is menial or complicated; it can still be automated with Industriac automation 
+                                software.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-5" id="infotainmentsystems">
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="infotainmentsystems">
+                            <img src="../public/images/infotainmentsystem_image1.jpeg" alt="infotainmentsystems">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel text-left">
+                            <h1 class="text-center">Infotainment Systems</h1>
+                            <p>The word infotainment is a portmanteau of the words information and entertainment, Infotainment systems 
+                                is an emerging technology that is being developed to provide an interactive experience for viewers to enjoy 
+                                while they watch content. 
+                                <br>
+                                <br>
+                                The future evolution of infotainment systems will be shaped by how it can make the user experience better 
+                                and more immersive. The past decade has seen a rapid increase in the number of people who are plugged into 
+                                the digital world. As a result, more and more people are spending their time watching videos on their mobile 
+                                devices or at home on their televisions.
+                                <br>
+                                It is a term used to describe the convergence of information and entertainment media, most notably in news 
+                                broadcasting.Infotainment systems are not something new, they have been around for quite some time now. 
+                                But their future evolution will be driven by technology, such as AI and VR.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-6" id="rapidprototyping">
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="rapidprototyping">
+                            <img src="../public/images/rapidprototyping_image2.jpg" alt="rapidprototyping">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel text-left">
+                            <h1 class="text-center">Rapid Prototyping</h1>
+                            <p>Rapid Prototyping is a process that helps to create a model or prototype of an idea. It allows designers 
+                                to create models quickly and cheaply.
+                                <br>
+                                Rapid Prototyping is a process that has been around for years, but it’s only in the last decade or so 
+                                that it has become popular in the design industry. It was originally used to create prototypes of products 
+                                like cars, furniture, and other physical objects. However, as technology has advanced, Rapid Prototyping has 
+                                been used less for physical objects and more for digital products like websites, software applications, 
+                                and even video games.
+                                <br>
+                                The future evolution of Rapid Prototyping will be driven by improvements in virtual reality (VR) technology. 
+                                VR headsets are becoming more affordable and accessible to consumers every day. This will allow designers to 
+                                use this technology as a way to test out their ideas before they put them into production- which could lead 
+                                to faster development cycles and higher quality products overall.
+                                <br>
+                                The training stimulator is a device that helps to train the muscles and is used by athletes and people who 
+                                want to improve their performance.The training stimulator is a device which sends electrical pulses through
+                                the muscles, causing them to contract. This can be used for rehabilitation, or for athletic performance enhancement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-7" id="trainingstimulator">
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="trainingstimulator">
+                            <img src="../public/images/trainingstimulator_image6.jpg" alt="trainingstimulator">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="panel text-left">
+                            <h1 class="text-center">Training Stimulator</h1>
+                            <p>Training stimulator is a virtual reality application that simulates an environment for training purposes. 
+                            They are used to train people in high-risk situations, such as firefighters. These simulations have been 
+                            proven to be more effective and cost-effective than other methods of training.
+                            <br>
+                            <br>
+                            Virtual Reality (VR) has been steadily growing in popularity over the last few years and it's not hard to 
+                            see why. It has the potential to make some aspects of our lives better, more efficient, or even entirely 
+                            new experiences altogether. One of these VR applications is the use of Virtual Reality Training Stimulators 
+                            (VRTS).
+                            <br>
+                            The idea behind VRTS is that they can be used to simulate real-life scenarios in which individuals would need 
+                            to be trained for, but with no risk involved at all. This means that VRTS can be used for anything from 
+                            firefighting simulation programs for firefighter's training, airplane piloting simulations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="featured-products py-5 bg-light" id="shop">
+            <div class="container">
+                <h2 class="text-center mb-4">Featured Products</h2>
+                <div class="row g-4">
+                    <!-- Product 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 rounded shadow-sm">
+                            <div id="carousel1" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/product1a.jpg" class="d-block w-100" alt="View 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/product1b.jpg" class="d-block w-100" alt="View 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <video class="d-block w-100" autoplay muted controls>
+                                            <source src="media/product1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <h4>IoT Sensor Kit</h4>
+                            <p>
+                                <span class="text-muted text-decoration-line-through">₹5,499</span>
+                                <span class="text-success fw-bold fs-5 ms-2">₹4,999</span>
+                            </p>
+                            <ul>
+                                <li>Includes 12+ sensors</li>
+                                <li>Compatible with ESP32, Arduino</li>
+                                <li>Project guide included</li>
+                            </ul>
+                            <button class="btn btn-success w-100 add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 rounded shadow-sm">
+                            <div id="carousel2" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/product2a.jpg" class="d-block w-100" alt="View 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/product2b.jpg" class="d-block w-100" alt="View 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <video class="d-block w-100" autoplay muted controls>
+                                            <source src="media/product2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <h4>Smart Home Automation Kit</h4>
+                            <p>
+                                <span class="text-muted text-decoration-line-through">₹9,499</span>
+                                <span class="text-success fw-bold fs-5 ms-2">₹7,999</span>
+                            </p>
+                            <ul>
+                                <li>Wireless control with mobile app</li>
+                                <li>Easy installation</li>
+                                <li>Energy efficient devices</li>
+                            </ul>
+                            <button class="btn btn-success w-100 add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 rounded shadow-sm">
+                            <div id="carousel3" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/product3a.jpg" class="d-block w-100" alt="View 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/product3b.jpg" class="d-block w-100" alt="View 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <video class="d-block w-100" autoplay muted controls>
+                                            <source src="media/product3.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <h4>Robotics Starter Kit</h4>
+                            <p>
+                                <span class="text-muted text-decoration-line-through">₹12,999</span>
+                                <span class="text-success fw-bold fs-5 ms-2">₹11,499</span>
+                            </p>
+                            <ul>
+                                <li>Includes microcontroller & sensors</li>
+                                <li>Comprehensive tutorials</li>
+                                <li>Support for Arduino & Raspberry Pi</li>
+                            </ul>
+                            <button class="btn btn-success w-100 add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spacer between rows -->
+                <div class="my-4"></div>
+                
+                <div class="row g-4">
+                    <!-- Product 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 rounded shadow-sm">
+                            <div id="carousel1" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/product1a.jpg" class="d-block w-100" alt="View 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/product1b.jpg" class="d-block w-100" alt="View 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <video class="d-block w-100" autoplay muted controls>
+                                            <source src="media/product1.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <h4>IoT Sensor Kit</h4>
+                            <p>
+                                <span class="text-muted text-decoration-line-through">₹5,499</span>
+                                <span class="text-success fw-bold fs-5 ms-2">₹4,999</span>
+                            </p>
+                            <ul>
+                                <li>Includes 12+ sensors</li>
+                                <li>Compatible with ESP32, Arduino</li>
+                                <li>Project guide included</li>
+                            </ul>
+                            <button class="btn btn-success w-100 add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 rounded shadow-sm">
+                            <div id="carousel2" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/product2a.jpg" class="d-block w-100" alt="View 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/product2b.jpg" class="d-block w-100" alt="View 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <video class="d-block w-100" autoplay muted controls>
+                                            <source src="media/product2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <h4>Smart Home Automation Kit</h4>
+                            <p>
+                                <span class="text-muted text-decoration-line-through">₹9,499</span>
+                                <span class="text-success fw-bold fs-5 ms-2">₹7,999</span>
+                            </p>
+                            <ul>
+                                <li>Wireless control with mobile app</li>
+                                <li>Easy installation</li>
+                                <li>Energy efficient devices</li>
+                            </ul>
+                            <button class="btn btn-success w-100 add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="bg-white p-4 rounded shadow-sm">
+                            <div id="carousel2" class="carousel slide mb-3" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/product2a.jpg" class="d-block w-100" alt="View 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/product2b.jpg" class="d-block w-100" alt="View 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <video class="d-block w-100" autoplay muted controls>
+                                            <source src="media/product2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                            </div>
+                            <h4>Smart Home Automation Kit</h4>
+                            <p>
+                                <span class="text-muted text-decoration-line-through">₹9,499</span>
+                                <span class="text-success fw-bold fs-5 ms-2">₹7,999</span>
+                            </p>
+                            <ul>
+                                <li>Wireless control with mobile app</li>
+                                <li>Easy installation</li>
+                                <li>Energy efficient devices</li>
+                            </ul>
+                            <button class="btn btn-success w-100 add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-8 container-fluid p-0 text-center">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h1>Download Our App For all Platforms</h1>
+                    <p>App || website to help you get the most out of your day, across all your devices.
+                        <br>
+                        Find quick answers, explore your interests with technologies, and stay up to date with  us...</p>
+                </div>
+            </div>
+            <div class="platform row">
+                <div class="col-md-6 col-sm-12 text-right">
+                    <div class="desktop shadow-lg">
+                        <div class="d-flex flex-row justify-content-center">
+                            <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+                            <div class="text text-left">
+                                <h3 class="pt-1 m-0">Desktop</h3>
+                                <p class="p-0 m-0">On Website</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 text-left">
+                    <div class="desktop shadow-lg">
+                        <div class="d-flex flex-row justify-content-center">
+                            <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
+                            <div class="text text-left">
+                                <h3 class="pt-1 m-0">On Mobile</h3>
+                                <p class="p-0 m-0">On Play Store</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-9">
+            <div class="container text-center">
+                <h1 class="text-dark">Founder</h1>
+                <p class="text-secondary text-dark">GYAM Technologies</p>
+                <div>
+                            <div class="card mr-4 d-inline-block shadow-lg p-10" >
+                                <div class="card-img-top">
+                                    <img src="../public/images/B_Ganesh.jpg" alt="Biradhar Ganesh" class="img-fluid border-radius p-3">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">Biradhar Ganesh</h3>
+                                    <p class="card-text">
+                                        Biradhar Ganesh is a professional engineer and the Founder of GYAM Technologies. 
+                                        Since the company's inception, he has dedicated himself to innovation—leading research, 
+                                        design, and development of advanced technological solutions. With a strong passion for 
+                                        engineering and education, he continues to bridge the gap between industry and academia.
+                                        <br>
+                                        From the beginning, GYAM Technologies was built to be a hub of innovation—where ideas are transformed 
+                                        into impactful products through research, engineering, and creativity. Under Ganesh’s leadership, 
+                                        the company focuses on solving problems through smart design, automation, and next-generation technology. 
+                                        GYAM Technologies has delivered innovative solutions to a wide range of clients, gaining a reputation 
+                                        for excellence and creativity.
+                                        <br>
+                                        As the driving force behind the organization, Ganesh manages both technical and strategic growth. 
+                                        He works closely with reputed institutions and organizations, contributing to student development by providing 
+                                        training, internships, and real-time project opportunities. His vision is to empower the next generation 
+                                        of engineers to evolve as one with the industry.
+                                    </p>
+                                    <a href="#" class="text-secondary text-decoration-none">
+                                        Biradhar Ganesh
+                                    </a>
+                                    <p class="text-black-50">
+                                        Founder of GYAM Technologies 
+                                    </p>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Cart Modal -->
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel"><i class="fa fa-shopping-cart"></i> Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                    <thead>
+                        <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Subtotal</th>
+                        <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items"></tbody>
+                    </table>
+                    <div class="text-end">
+                    <h5>Total: ₹<span id="cart-total">0</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="checkout-btn" disabled>Proceed to Checkout</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container-fluid p-0">
+            <div class="row text-left">
+                <div class="col-md-5 col-md-5">
+                    <h1 class="text-light">About Us</h1>
+                    <p class="text-light">
+
+                    </p>
+                    <p class="pt-4 text-light">
+                        Copyright <i class="fa-sharp fa-regular fa-copyright"></i>2025 All rights reserved | This template is made with by
+                        <span>Biradhar Ganesh</span>
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <h4 class="text-light">Newsletter</h4>
+                    <p class="text-light" >Stay Updated</p>
+                    <form class="form-inline">
+                        <div class="col pl-8">
+                            <div class="input-group pr-1">
+                                <input type="text" class="form-control bg-dark text-white" placeholder="Email">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fas fa-arrow-right " style="height: 4vmin; display: contents;justify-content: center;">&nbsp</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                    <h4 class="text-light">Follow Us</h4>
+                    <p class="text-light">let us be social </p>
+                    <div class="column" style="color: white;">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="gyam_javascript.js"></script>
+
+    
+</body>
+</html> 
